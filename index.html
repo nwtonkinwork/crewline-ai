@@ -2257,7 +2257,7 @@
                         <li><span class="check">&#10003;</span> Business hours answering</li>
                         <li><span class="check">&#10003;</span> Basic call dashboard</li>
                     </ul>
-                    <a href="#contact" class="pricing-btn secondary">Get Started</a>
+                    <a href="#contact" class="pricing-btn secondary" data-plan="starter-$149" data-monthly-link="#contact" data-yearly-link="#contact" onclick="document.getElementById('selectedPlan').value='starter-$149'">Get Started</a>
                 </div>
 
                 <div class="pricing-card featured animate-on-scroll">
@@ -2344,6 +2344,11 @@
                                     <option value="other">Other</option>
                                 </select>
                             </div>
+                            <!-- Honeypot field - hidden from humans, bots fill it -->
+                            <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+                                <input type="text" name="website" id="honeypotField" tabindex="-1" autocomplete="off">
+                            </div>
+                            <input type="hidden" id="selectedPlan" name="selectedPlan" value="">
                             <div class="form-group full-width">
                                 <button type="submit" class="form-submit-btn">Get Started - Set Up My AI Receptionist</button>
                             </div>
@@ -2878,21 +2883,56 @@
             const form = event.target;
             const btn = form.querySelector('.form-submit-btn');
             const origText = btn.textContent;
+
+            // Honeypot check - if filled, a bot submitted the form
+            if (document.getElementById('honeypotField').value) {
+                btn.textContent = 'Thanks! We\'ll be in touch soon.';
+                btn.style.background = 'linear-gradient(135deg, #00b892, #00d4aa)';
+                form.reset();
+                setTimeout(() => { btn.textContent = origText; btn.style.background = ''; }, 4000);
+                return false;
+            }
+
             btn.textContent = 'Sending...';
             btn.style.opacity = '0.7';
+            btn.disabled = true;
 
-            // Simulate form submission
-            setTimeout(() => {
-                btn.textContent = 'We\'ll be in touch within 24 hours!';
-                btn.style.background = 'linear-gradient(135deg, #00b892, #00d4aa)';
+            const payload = {
+                businessName: document.getElementById('businessName').value,
+                yourName: document.getElementById('yourName').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                businessType: document.getElementById('businessType').value,
+                selectedPlan: document.getElementById('selectedPlan').value || 'none',
+                submittedAt: new Date().toISOString(),
+                source: 'website-contact-form'
+            };
+
+            fetch('https://hook.us2.make.com/cenacjw6lf9wky4xup4yp98grtfltukr', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (response.ok) {
+                    btn.textContent = 'We\'ll be in touch within 24 hours!';
+                    btn.style.background = 'linear-gradient(135deg, #00b892, #00d4aa)';
+                    btn.style.opacity = '1';
+                    btn.disabled = false;
+                    form.reset();
+                    document.getElementById('selectedPlan').value = '';
+                    setTimeout(() => { btn.textContent = origText; btn.style.background = ''; }, 4000);
+                } else {
+                    throw new Error('Submission failed');
+                }
+            })
+            .catch(() => {
+                btn.textContent = 'Error - Please call (575) 232-9633 instead';
+                btn.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
                 btn.style.opacity = '1';
-                form.reset();
-
-                setTimeout(() => {
-                    btn.textContent = origText;
-                    btn.style.background = '';
-                }, 4000);
-            }, 1200);
+                btn.disabled = false;
+                setTimeout(() => { btn.textContent = origText; btn.style.background = ''; }, 5000);
+            });
 
             return false;
         }
