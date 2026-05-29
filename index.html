@@ -2245,20 +2245,10 @@
                 <p class="section-subtitle">No contracts. No hidden fees. Cancel anytime. Way cheaper than a receptionist.</p>
             </div>
 
-            <div class="pricing-toggle animate-on-scroll">
-                <span class="pricing-toggle-label active" id="monthlyLabel">Monthly</span>
-                <div class="toggle-switch" id="pricingToggle">
-                    <div class="toggle-knob"></div>
-                </div>
-                <span class="pricing-toggle-label" id="yearlyLabel">Yearly</span>
-                <span class="save-badge">SAVE 20%</span>
-            </div>
-
             <div class="pricing-grid">
                 <div class="pricing-card animate-on-scroll">
                     <div class="pricing-name">Starter</div>
-                    <div class="pricing-original" data-yearly="$97/mo">&nbsp;</div>
-                    <div class="pricing-price" data-monthly="97" data-yearly="78">$97<span>/mo</span></div>
+                    <div class="pricing-price">$97<span>/mo</span></div>
                     <p class="pricing-desc">Perfect for solo operators and small crews just getting started.</p>
                     <ul class="pricing-features">
                         <li><span class="check">&#10003;</span> Up to 100 calls/month</li>
@@ -2272,8 +2262,7 @@
 
                 <div class="pricing-card featured animate-on-scroll">
                     <div class="pricing-name">Professional</div>
-                    <div class="pricing-original" data-yearly="$197/mo">&nbsp;</div>
-                    <div class="pricing-price" data-monthly="197" data-yearly="158">$197<span>/mo</span></div>
+                    <div class="pricing-price">$197<span>/mo</span></div>
                     <p class="pricing-desc">For growing companies that need full coverage and never want to miss a call.</p>
                     <ul class="pricing-features">
                         <li><span class="check">&#10003;</span> Up to 500 calls/month</li>
@@ -2288,8 +2277,7 @@
 
                 <div class="pricing-card animate-on-scroll">
                     <div class="pricing-name">Enterprise</div>
-                    <div class="pricing-original" data-yearly="$347/mo">&nbsp;</div>
-                    <div class="pricing-price" data-monthly="347" data-yearly="278">$347<span>/mo</span></div>
+                    <div class="pricing-price">$347<span>/mo</span></div>
                     <p class="pricing-desc">For multi-crew operations and companies with high call volume.</p>
                     <ul class="pricing-features">
                         <li><span class="check">&#10003;</span> Unlimited calls</li>
@@ -2832,41 +2820,6 @@
                 const isOpen = item.classList.contains('open');
                 document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
                 if (!isOpen) item.classList.add('open');
-            });
-        });
-
-        // ===== Pricing Toggle =====
-        const pricingToggle = document.getElementById('pricingToggle');
-        const monthlyLabel = document.getElementById('monthlyLabel');
-        const yearlyLabel = document.getElementById('yearlyLabel');
-        let isYearly = false;
-
-        pricingToggle.addEventListener('click', () => {
-            isYearly = !isYearly;
-            pricingToggle.classList.toggle('active', isYearly);
-            monthlyLabel.classList.toggle('active', !isYearly);
-            yearlyLabel.classList.toggle('active', isYearly);
-
-            document.querySelectorAll('.pricing-price').forEach(el => {
-                const monthly = el.getAttribute('data-monthly');
-                const yearly = el.getAttribute('data-yearly');
-                if (monthly && yearly) {
-                    if (isYearly) {
-                        el.innerHTML = '$' + yearly + '<span>/mo</span>';
-                    } else {
-                        el.innerHTML = '$' + monthly + '<span>/mo</span>';
-                    }
-                }
-            });
-
-            document.querySelectorAll('.pricing-original').forEach(el => {
-                if (isYearly) {
-                    el.textContent = el.getAttribute('data-yearly');
-                    el.classList.add('show');
-                } else {
-                    el.textContent = '';
-                    el.classList.remove('show');
-                }
             });
         });
 
