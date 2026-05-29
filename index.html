@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrewLine AI - Never Miss a Customer Call Again</title>
     <meta name="description" content="AI-powered phone receptionist for contractors. Stop losing jobs to missed calls. Your AI receptionist answers 24/7 so your crew can focus on the work.">
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crewlineai.com/">
+    <meta property="og:title" content="CrewLine AI - Never Miss a Customer Call Again">
+    <meta property="og:description" content="AI-powered phone receptionist for contractors. Answers calls 24/7, books jobs, and sends you instant notifications. Try the live demo.">
+    <meta property="og:image" content="https://crewlineai.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CrewLine AI - Never Miss a Customer Call Again">
+    <meta name="twitter:description" content="AI-powered phone receptionist for contractors. Answers calls 24/7, books jobs, and sends you instant notifications.">
+    <meta name="twitter:image" content="https://crewlineai.com/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -2257,7 +2267,7 @@
                         <li><span class="check">&#10003;</span> Business hours answering</li>
                         <li><span class="check">&#10003;</span> Basic call dashboard</li>
                     </ul>
-                    <a href="#contact" class="pricing-btn secondary" data-plan="starter-$149" data-monthly-link="#contact" data-yearly-link="#contact" onclick="document.getElementById('selectedPlan').value='starter-$149'">Get Started</a>
+                    <a href="#contact" class="pricing-btn secondary" data-plan="Starter - $149/mo" onclick="document.getElementById('selectedPlan').value='Starter - $149/mo'">Get Started</a>
                 </div>
 
                 <div class="pricing-card featured animate-on-scroll">
@@ -2273,7 +2283,7 @@
                         <li><span class="check">&#10003;</span> Full analytics dashboard</li>
                         <li><span class="check">&#10003;</span> Call recordings</li>
                     </ul>
-                    <a href="#contact" class="pricing-btn primary">Get Started</a>
+                    <a href="#contact" class="pricing-btn primary" data-plan="Professional - $299/mo" onclick="document.getElementById('selectedPlan').value='Professional - $299/mo'">Get Started</a>
                 </div>
 
                 <div class="pricing-card animate-on-scroll">
@@ -2289,7 +2299,7 @@
                         <li><span class="check">&#10003;</span> CRM integration</li>
                         <li><span class="check">&#10003;</span> Dedicated account manager</li>
                     </ul>
-                    <a href="#contact" class="pricing-btn secondary">Contact Us</a>
+                    <a href="#contact" class="pricing-btn secondary" data-plan="Enterprise - $499/mo" onclick="document.getElementById('selectedPlan').value='Enterprise - $499/mo'">Contact Us</a>
                 </div>
             </div>
 
@@ -2650,12 +2660,8 @@
                         CrewLine AI
                     </div>
                     <p>AI-powered phone receptionist built for contractors and service businesses. Never miss a customer call again.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-icon" aria-label="Facebook">f</a>
-                        <a href="#" class="social-icon" aria-label="Twitter">X</a>
-                        <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
-                        <a href="#" class="social-icon" aria-label="Instagram">ig</a>
-                    </div>
+                    <!-- Social links: add real URLs when accounts are created -->
+
                 </div>
                 <div class="footer-col">
                     <h4>Product</h4>
@@ -2669,11 +2675,11 @@
                 <div class="footer-col">
                     <h4>Industries</h4>
                     <ul>
-                        <li><a href="#">Tree Services</a></li>
-                        <li><a href="#">Landscaping</a></li>
-                        <li><a href="#">Plumbing</a></li>
-                        <li><a href="#">Roofing</a></li>
-                        <li><a href="#">HVAC</a></li>
+                        <li><a href="#contact">Tree Services</a></li>
+                        <li><a href="#contact">Landscaping</a></li>
+                        <li><a href="#contact">Plumbing</a></li>
+                        <li><a href="#contact">Roofing</a></li>
+                        <li><a href="#contact">HVAC</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -2908,7 +2914,7 @@
                 source: 'website-contact-form'
             };
 
-            fetch('https://hook.us2.make.com/cenacjw6lf9wky4xup4yp98grtfltukr', {
+            fetch('https://hook.us2.make.com/gwonbmgr16nqf2k1qw39a7noyt7gwg6a', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
