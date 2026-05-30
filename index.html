@@ -2309,245 +2309,7 @@
 
     <div class="section-divider"></div>
 
-    <!-- ========== CONTACT / SIGNUP FORM ========== -->
-    <section class="contact-form-section" id="contact">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-label">Get Started</span>
-                <h2 class="section-title">Ready to Never Miss<br>a Call Again?</h2>
-                <p class="section-subtitle">Fill out the form below and we'll have your AI receptionist set up within 24 hours.</p>
-            </div>
-
-            <div class="form-wrapper animate-on-scroll">
-                <div class="form-inner">
-                    <form id="signupForm" onsubmit="return handleFormSubmit(event)">
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="businessName">Business Name</label>
-                                <input type="text" id="businessName" name="businessName" placeholder="e.g. Smith's Tree Service" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="yourName">Your Name</label>
-                                <input type="text" id="yourName" name="yourName" placeholder="e.g. John Smith" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="john@smithtree.com" required>
-                            </div>
-                            <div class="form-group full-width">
-                                <label for="businessType">Type of Business</label>
-                                <select id="businessType" name="businessType" required>
-                                    <option value="" disabled selected>Select your industry...</option>
-                                    <option value="tree-service">Tree Service</option>
-                                    <option value="landscaping">Landscaping</option>
-                                    <option value="plumbing">Plumbing</option>
-                                    <option value="hvac">HVAC</option>
-                                    <option value="roofing">Roofing</option>
-                                    <option value="electrical">Electrical</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <!-- Honeypot field - hidden from humans, bots fill it -->
-                            <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
-                                <input type="text" name="website" id="honeypotField" tabindex="-1" autocomplete="off">
-                            </div>
-                            <input type="hidden" id="selectedPlan" name="selectedPlan" value="">
-                            <div class="form-group full-width">
-                                <button type="submit" class="form-submit-btn">Get Started - Set Up My AI Receptionist</button>
-                            </div>
-                        </div>
-                    </form>
-                    <p class="form-note">We'll call you within 24 hours to set up your AI receptionist. No contracts, cancel anytime.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== TESTIMONIALS ========== -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-label">Testimonials</span>
-                <h2 class="section-title">Trusted by Local Contractors</h2>
-                <p class="section-subtitle">Here's what business owners are saying about CrewLine AI.</p>
-            </div>
-        </div>
-
-        <div class="testimonials-carousel-wrapper">
-            <div class="testimonials-track" id="testimonialsTrack">
-                <!-- Card 1 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"We were missing 8-10 calls a day when crews were out. First week with CrewLine, we booked 12 new estimates we would have completely lost."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">MR</div>
-                        <div>
-                            <div class="testimonial-name">Mike Rodriguez</div>
-                            <div class="testimonial-title">Rodriguez Tree Service</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"My customers literally can't tell it's an AI. They compliment how friendly our 'receptionist' is. I haven't told them yet."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SJ</div>
-                        <div>
-                            <div class="testimonial-name">Sarah Jenkins</div>
-                            <div class="testimonial-title">Jenkins Landscaping Co.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"Paying $299/month instead of $3,000 for a receptionist was a no-brainer. Plus it works weekends and holidays when we get the most emergency calls."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">DW</div>
-                        <div>
-                            <div class="testimonial-name">Dave Wilson</div>
-                            <div class="testimonial-title">Wilson Plumbing &amp; HVAC</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"Best investment I've made for my business this year. We picked up an extra $14k in jobs last month alone from calls we would've missed."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">TK</div>
-                        <div>
-                            <div class="testimonial-name">Tom Kowalski</div>
-                            <div class="testimonial-title">Kowalski Roofing</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"The text message summaries after each call are incredible. I know exactly what the customer needs before I even call them back."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">LP</div>
-                        <div>
-                            <div class="testimonial-name">Lisa Park</div>
-                            <div class="testimonial-title">Park Electric Services</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"Had a tree emergency call come in at 11pm on a Saturday. The AI flagged it immediately and I got the $4,500 job. That alone paid for a year of service."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">JB</div>
-                        <div>
-                            <div class="testimonial-name">James Brooks</div>
-                            <div class="testimonial-title">Brooks Tree Care</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Duplicate set for seamless loop -->
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"We were missing 8-10 calls a day when crews were out. First week with CrewLine, we booked 12 new estimates we would have completely lost."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">MR</div>
-                        <div>
-                            <div class="testimonial-name">Mike Rodriguez</div>
-                            <div class="testimonial-title">Rodriguez Tree Service</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"My customers literally can't tell it's an AI. They compliment how friendly our 'receptionist' is. I haven't told them yet."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SJ</div>
-                        <div>
-                            <div class="testimonial-name">Sarah Jenkins</div>
-                            <div class="testimonial-title">Jenkins Landscaping Co.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"Paying $299/month instead of $3,000 for a receptionist was a no-brainer. Plus it works weekends and holidays when we get the most emergency calls."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">DW</div>
-                        <div>
-                            <div class="testimonial-name">Dave Wilson</div>
-                            <div class="testimonial-title">Wilson Plumbing &amp; HVAC</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"Best investment I've made for my business this year. We picked up an extra $14k in jobs last month alone from calls we would've missed."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">TK</div>
-                        <div>
-                            <div class="testimonial-name">Tom Kowalski</div>
-                            <div class="testimonial-title">Kowalski Roofing</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"The text message summaries after each call are incredible. I know exactly what the customer needs before I even call them back."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">LP</div>
-                        <div>
-                            <div class="testimonial-name">Lisa Park</div>
-                            <div class="testimonial-title">Park Electric Services</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <p class="testimonial-text">"Had a tree emergency call come in at 11pm on a Saturday. The AI flagged it immediately and I got the $4,500 job. That alone paid for a year of service."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">JB</div>
-                        <div>
-                            <div class="testimonial-name">James Brooks</div>
-                            <div class="testimonial-title">Brooks Tree Care</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="section-divider"></div>
+    <!-- Testimonials section removed — will add back with real reviews -->
 
     <!-- ========== FAQ ========== -->
     <section class="faq" id="faq">
@@ -2671,11 +2433,11 @@
                 <div class="footer-col">
                     <h4>Industries</h4>
                     <ul>
-                        <li><a href="#contact">Tree Services</a></li>
-                        <li><a href="#contact">Landscaping</a></li>
-                        <li><a href="#contact">Plumbing</a></li>
-                        <li><a href="#contact">Roofing</a></li>
-                        <li><a href="#contact">HVAC</a></li>
+                        <li><a href="#pricing">Tree Services</a></li>
+                        <li><a href="#pricing">Landscaping</a></li>
+                        <li><a href="#pricing">Plumbing</a></li>
+                        <li><a href="#pricing">Roofing</a></li>
+                        <li><a href="#pricing">HVAC</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -2744,15 +2506,17 @@
         // ===== Mobile Menu Toggle =====
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
+        const menuIconOpen = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+        const menuIconClose = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('open');
-            mobileMenuBtn.textContent = navLinks.classList.contains('open') ? '\u2715' : '\u2630';
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('open') ? menuIconClose : menuIconOpen;
         });
 
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('open');
-                mobileMenuBtn.textContent = '\u2630';
+                mobileMenuBtn.innerHTML = menuIconOpen;
             });
         });
 
@@ -2844,65 +2608,7 @@
             });
         });
 
-        // ===== Form Submit Handler =====
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const btn = form.querySelector('.form-submit-btn');
-            const origText = btn.textContent;
-
-            // Honeypot check - if filled, a bot submitted the form
-            if (document.getElementById('honeypotField').value) {
-                btn.textContent = 'Thanks! We\'ll be in touch soon.';
-                btn.style.background = 'linear-gradient(135deg, #00b892, #00d4aa)';
-                form.reset();
-                setTimeout(() => { btn.textContent = origText; btn.style.background = ''; }, 4000);
-                return false;
-            }
-
-            btn.textContent = 'Sending...';
-            btn.style.opacity = '0.7';
-            btn.disabled = true;
-
-            const payload = {
-                businessName: document.getElementById('businessName').value,
-                yourName: document.getElementById('yourName').value,
-                phone: document.getElementById('phone').value,
-                email: document.getElementById('email').value,
-                businessType: document.getElementById('businessType').value,
-                selectedPlan: document.getElementById('selectedPlan').value || 'none',
-                submittedAt: new Date().toISOString(),
-                source: 'website-contact-form'
-            };
-
-            fetch('https://hook.us2.make.com/gwonbmgr16nqf2k1qw39a7noyt7gwg6a', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
-            })
-            .then(response => {
-                if (response.ok) {
-                    btn.textContent = 'We\'ll be in touch within 24 hours!';
-                    btn.style.background = 'linear-gradient(135deg, #00b892, #00d4aa)';
-                    btn.style.opacity = '1';
-                    btn.disabled = false;
-                    form.reset();
-                    document.getElementById('selectedPlan').value = '';
-                    setTimeout(() => { btn.textContent = origText; btn.style.background = ''; }, 4000);
-                } else {
-                    throw new Error('Submission failed');
-                }
-            })
-            .catch(() => {
-                btn.textContent = 'Error - Please call (575) 232-9633 instead';
-                btn.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
-                btn.style.opacity = '1';
-                btn.disabled = false;
-                setTimeout(() => { btn.textContent = origText; btn.style.background = ''; }, 5000);
-            });
-
-            return false;
-        }
+        // Form handler removed — contact form section removed for now
 
         // ===== Parallax-like Subtle Scroll Effect =====
         let ticking = false;
