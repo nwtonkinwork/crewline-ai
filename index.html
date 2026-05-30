@@ -638,6 +638,17 @@
             margin-bottom: 12px;
         }
 
+        .problem-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: var(--red-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
         .problem-card h3 {
             font-size: 1.1rem;
             font-weight: 700;
@@ -1941,7 +1952,7 @@
     <nav id="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <div class="logo-icon">&#9742;</div>
+                <div class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
                 CrewLine AI
             </a>
             <ul class="nav-links" id="navLinks">
@@ -1952,7 +1963,7 @@
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="tel:+15752329633" class="nav-cta">Try It Live</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">&#9776;</button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
         </div>
     </nav>
 
@@ -1979,13 +1990,16 @@
 
             <div class="social-proof-badges">
                 <div class="proof-badge">
-                    2,847 calls answered this month
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    No contracts, cancel anytime
                 </div>
                 <div class="proof-badge">
-                    98% customer satisfaction
-                </div>
-                <div class="proof-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                     Setup in under 24 hours
+                </div>
+                <div class="proof-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    30-day money-back guarantee
                 </div>
             </div>
 
@@ -2022,14 +2036,17 @@
             <div class="problem-grid">
                 <div class="problem-cards">
                     <div class="problem-card animate-on-scroll">
+                        <div class="problem-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/><line x1="2" y1="20" x2="8" y2="14" opacity="0.5"/><line x1="22" y1="20" x2="16" y2="14" opacity="0.5"/></svg></div>
                         <h3>Voicemail is a dead end</h3>
                         <p>62% of callers won't leave a voicemail. They'll just move on to the next company on Google.</p>
                     </div>
                     <div class="problem-card animate-on-scroll">
+                        <div class="problem-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
                         <h3>Each missed call = $500-$5,000 lost</h3>
                         <p>A single tree removal job can be worth thousands. How many calls are you missing every week?</p>
                     </div>
                     <div class="problem-card animate-on-scroll">
+                        <div class="problem-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13" opacity="0.7"/><line x1="23" y1="8" x2="18" y2="13" opacity="0.7"/></svg></div>
                         <h3>Hiring a receptionist costs $3,000+/mo</h3>
                         <p>A full-time person to answer phones is expensive, calls in sick, takes vacations, and goes home at 5pm.</p>
                     </div>
@@ -2098,23 +2115,23 @@
                     <p>No more scribbled notes or missed voicemails. Every call is captured, summarized, and texted directly to you with all the details you need to close the job.</p>
                     <ul class="mockup-features-list">
                         <li>
-                            <span class="check-circle">&#10003;</span>
+                            <span class="check-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
                             Caller name, number, and address captured
                         </li>
                         <li>
-                            <span class="check-circle">&#10003;</span>
+                            <span class="check-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
                             Service details and special requests noted
                         </li>
                         <li>
-                            <span class="check-circle">&#10003;</span>
+                            <span class="check-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
                             Urgency level flagged automatically
                         </li>
                         <li>
-                            <span class="check-circle">&#10003;</span>
+                            <span class="check-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
                             Instant text + email notification
                         </li>
                         <li>
-                            <span class="check-circle">&#10003;</span>
+                            <span class="check-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
                             Appointments booked on your behalf
                         </li>
                     </ul>
@@ -2244,11 +2261,11 @@
                     <div class="pricing-price">$97<span>/mo</span></div>
                     <p class="pricing-desc">Perfect for solo operators and small crews just getting started.</p>
                     <ul class="pricing-features">
-                        <li><span class="check">&#10003;</span> Up to 100 calls/month</li>
-                        <li><span class="check">&#10003;</span> Custom AI receptionist</li>
-                        <li><span class="check">&#10003;</span> Text/email notifications</li>
-                        <li><span class="check">&#10003;</span> 24/7 answering</li>
-                        <li><span class="check">&#10003;</span> Basic call dashboard</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Up to 100 calls/month</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Custom AI receptionist</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Text/email notifications</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 24/7 answering</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Basic call dashboard</li>
                     </ul>
                     <a href="https://buy.stripe.com/00w00j3EK56vbJ11hhgrS02" target="_blank" class="pricing-btn secondary" data-plan="Starter - $97/mo" onclick="document.getElementById('selectedPlan').value='Starter - $97/mo'">Get Started</a>
                 </div>
@@ -2258,12 +2275,12 @@
                     <div class="pricing-price">$197<span>/mo</span></div>
                     <p class="pricing-desc">For growing companies that need full coverage and never want to miss a call.</p>
                     <ul class="pricing-features">
-                        <li><span class="check">&#10003;</span> Up to 500 calls/month</li>
-                        <li><span class="check">&#10003;</span> Custom AI receptionist</li>
-                        <li><span class="check">&#10003;</span> 24/7 answering</li>
-                        <li><span class="check">&#10003;</span> Emergency call routing</li>
-                        <li><span class="check">&#10003;</span> Full analytics dashboard</li>
-                        <li><span class="check">&#10003;</span> Call recordings</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Up to 500 calls/month</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Custom AI receptionist</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 24/7 answering</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Emergency call routing</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Full analytics dashboard</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Call recordings</li>
                     </ul>
                     <a href="https://buy.stripe.com/eVq28r1wC42reVd1hhgrS01" target="_blank" class="pricing-btn primary" data-plan="Professional - $197/mo" onclick="document.getElementById('selectedPlan').value='Professional - $197/mo'">Get Started</a>
                 </div>
@@ -2273,12 +2290,12 @@
                     <div class="pricing-price">$347<span>/mo</span></div>
                     <p class="pricing-desc">For multi-crew operations and companies with high call volume.</p>
                     <ul class="pricing-features">
-                        <li><span class="check">&#10003;</span> Unlimited calls</li>
-                        <li><span class="check">&#10003;</span> Multiple AI assistants</li>
-                        <li><span class="check">&#10003;</span> 24/7 answering</li>
-                        <li><span class="check">&#10003;</span> Priority emergency routing</li>
-                        <li><span class="check">&#10003;</span> CRM integration</li>
-                        <li><span class="check">&#10003;</span> Dedicated account manager</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Unlimited calls</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Multiple AI assistants</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 24/7 answering</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Priority emergency routing</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> CRM integration</li>
+                        <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Dedicated account manager</li>
                     </ul>
                     <a href="https://buy.stripe.com/bJe00jdfk2YnaEX8JJgrS00" target="_blank" class="pricing-btn secondary" data-plan="Enterprise - $347/mo" onclick="document.getElementById('selectedPlan').value='Enterprise - $347/mo'">Contact Us</a>
                 </div>
@@ -2367,7 +2384,7 @@
                 <!-- Card 1 -->
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"We were missing 8-10 calls a day when crews were out. First week with CrewLine, we booked 12 new estimates we would have completely lost."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">MR</div>
@@ -2381,7 +2398,7 @@
                 <!-- Card 2 -->
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"My customers literally can't tell it's an AI. They compliment how friendly our 'receptionist' is. I haven't told them yet."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">SJ</div>
@@ -2395,7 +2412,7 @@
                 <!-- Card 3 -->
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"Paying $299/month instead of $3,000 for a receptionist was a no-brainer. Plus it works weekends and holidays when we get the most emergency calls."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">DW</div>
@@ -2409,7 +2426,7 @@
                 <!-- Card 4 -->
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"Best investment I've made for my business this year. We picked up an extra $14k in jobs last month alone from calls we would've missed."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">TK</div>
@@ -2423,7 +2440,7 @@
                 <!-- Card 5 -->
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"The text message summaries after each call are incredible. I know exactly what the customer needs before I even call them back."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">LP</div>
@@ -2437,7 +2454,7 @@
                 <!-- Card 6 -->
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"Had a tree emergency call come in at 11pm on a Saturday. The AI flagged it immediately and I got the $4,500 job. That alone paid for a year of service."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">JB</div>
@@ -2451,7 +2468,7 @@
                 <!-- Duplicate set for seamless loop -->
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"We were missing 8-10 calls a day when crews were out. First week with CrewLine, we booked 12 new estimates we would have completely lost."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">MR</div>
@@ -2464,7 +2481,7 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"My customers literally can't tell it's an AI. They compliment how friendly our 'receptionist' is. I haven't told them yet."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">SJ</div>
@@ -2477,7 +2494,7 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"Paying $299/month instead of $3,000 for a receptionist was a no-brainer. Plus it works weekends and holidays when we get the most emergency calls."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">DW</div>
@@ -2490,7 +2507,7 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"Best investment I've made for my business this year. We picked up an extra $14k in jobs last month alone from calls we would've missed."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">TK</div>
@@ -2503,7 +2520,7 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"The text message summaries after each call are incredible. I know exactly what the customer needs before I even call them back."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">LP</div>
@@ -2516,7 +2533,7 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-quote-mark">"</div>
-                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="testimonial-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <p class="testimonial-text">"Had a tree emergency call come in at 11pm on a Saturday. The AI flagged it immediately and I got the $4,500 job. That alone paid for a year of service."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">JB</div>
@@ -2545,7 +2562,7 @@
                 <div class="faq-item animate-on-scroll">
                     <button class="faq-question">
                         Will my customers know they're talking to an AI?
-                        <span class="arrow">&#9660;</span>
+                        <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
                     </button>
                     <div class="faq-answer">
                         <p>Most people can't tell the difference. Our AI uses the most advanced voice technology available and is trained to speak naturally with proper tone, pacing, and personality. It introduces itself by name and sounds like a friendly, professional receptionist.</p>
@@ -2555,7 +2572,7 @@
                 <div class="faq-item animate-on-scroll">
                     <button class="faq-question">
                         How fast can I get set up?
-                        <span class="arrow">&#9660;</span>
+                        <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
                     </button>
                     <div class="faq-answer">
                         <p>Most businesses are fully up and running within 24 hours. We just need your business details (company name, services, hours) and we handle all the technical setup. You can start receiving AI-answered calls the same day.</p>
@@ -2565,7 +2582,7 @@
                 <div class="faq-item animate-on-scroll">
                     <button class="faq-question">
                         Do I need to get a new phone number?
-                        <span class="arrow">&#9660;</span>
+                        <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
                     </button>
                     <div class="faq-answer">
                         <p>Nope! You can keep your existing business number. We'll set up call forwarding so when you can't answer, the AI picks up automatically. Or you can get a dedicated number if you prefer. Either way works great.</p>
@@ -2575,7 +2592,7 @@
                 <div class="faq-item animate-on-scroll">
                     <button class="faq-question">
                         What happens with emergency calls?
-                        <span class="arrow">&#9660;</span>
+                        <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
                     </button>
                     <div class="faq-answer">
                         <p>The AI is trained to recognize emergencies (tree on a house, burst pipe, flooding, etc.) and immediately flags them as urgent. You'll get an instant text and phone notification so you can respond right away. No emergency gets lost in a voicemail box.</p>
@@ -2585,7 +2602,7 @@
                 <div class="faq-item animate-on-scroll">
                     <button class="faq-question">
                         Can I customize what the AI says?
-                        <span class="arrow">&#9660;</span>
+                        <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
                     </button>
                     <div class="faq-answer">
                         <p>Absolutely. Everything is customized to your business: the greeting, the voice, the personality, the services discussed, your hours, your service area. You can update it anytime. It represents your brand, not ours.</p>
@@ -2595,7 +2612,7 @@
                 <div class="faq-item animate-on-scroll">
                     <button class="faq-question">
                         What if I want to cancel?
-                        <span class="arrow">&#9660;</span>
+                        <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
                     </button>
                     <div class="faq-answer">
                         <p>No contracts, no cancellation fees. You can cancel anytime with one click. We're confident you'll see the value immediately though. Most customers see a return on investment within the first week.</p>
@@ -2605,7 +2622,7 @@
                 <div class="faq-item animate-on-scroll">
                     <button class="faq-question">
                         What types of businesses does this work for?
-                        <span class="arrow">&#9660;</span>
+                        <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
                     </button>
                     <div class="faq-answer">
                         <p>Any service business where crews are in the field and calls go unanswered: tree services, landscaping, plumbing, HVAC, roofing, electrical, painting, fencing, concrete, pressure washing, pest control, and more. If your team is on job sites, this is built for you.</p>
@@ -2635,7 +2652,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="logo">
-                        <div class="logo-icon">&#9742;</div>
+                        <div class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
                         CrewLine AI
                     </div>
                     <p>AI-powered phone receptionist built for contractors and service businesses. Never miss a customer call again.</p>
