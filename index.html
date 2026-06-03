@@ -1961,7 +1961,8 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="tel:+15752329633" class="nav-cta">Try It Live</a></li>
+                <li><a href="tel:+15752329633">Try It Live</a></li>
+                <li><button type="button" class="nav-cta js-open-lead">Get Started</button></li>
             </ul>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
         </div>
@@ -1982,10 +1983,11 @@
                 Your crew is on the job. Your phone is ringing. Our AI receptionist answers every call, books estimates, and never takes a day off.
             </p>
             <div class="hero-cta-group">
-                <a href="tel:+15752329633" class="cta-phone">
-                    Call Our AI Now: (575) 232-9633
-                </a>
-                <p class="cta-subtext">Hear it for yourself. No signup needed. Takes 30 seconds.</p>
+                <div class="hero-cta-row">
+                    <button type="button" class="cta-phone js-open-lead">Get Started Free →</button>
+                    <a href="tel:+15752329633" class="cta-ghost">Call Our AI: (575) 232-9633</a>
+                </div>
+                <p class="cta-subtext">Free setup — you only pay once it's live. Or hear the AI yourself, no signup needed.</p>
             </div>
 
             <div class="social-proof-badges">
@@ -2252,7 +2254,7 @@
             <div class="section-header animate-on-scroll">
                 <span class="section-label">Pricing</span>
                 <h2 class="section-title">Simple, Honest Pricing</h2>
-                <p class="section-subtitle">No contracts. No hidden fees. Cancel anytime. Way cheaper than a receptionist.</p>
+                <p class="section-subtitle">Free, done-for-you setup. You only pay once your AI is live and answering calls. No contracts — cancel anytime.</p>
             </div>
 
             <div class="pricing-grid">
@@ -2267,7 +2269,7 @@
                         <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 24/7 answering</li>
                         <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Basic call dashboard</li>
                     </ul>
-                    <a href="https://buy.stripe.com/00w00j3EK56vbJ11hhgrS02" target="_blank" class="pricing-btn secondary" data-plan="Starter - $97/mo" onclick="document.getElementById('selectedPlan').value='Starter - $97/mo'">Get Started</a>
+                    <button type="button" class="pricing-btn secondary js-open-lead" data-plan="Starter - $97/mo">Get Started</button>
                 </div>
 
                 <div class="pricing-card featured animate-on-scroll">
@@ -2282,7 +2284,7 @@
                         <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Full analytics dashboard</li>
                         <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Call recordings</li>
                     </ul>
-                    <a href="https://buy.stripe.com/eVq28r1wC42reVd1hhgrS01" target="_blank" class="pricing-btn primary" data-plan="Professional - $197/mo" onclick="document.getElementById('selectedPlan').value='Professional - $197/mo'">Get Started</a>
+                    <button type="button" class="pricing-btn primary js-open-lead" data-plan="Professional - $197/mo">Get Started</button>
                 </div>
 
                 <div class="pricing-card animate-on-scroll">
@@ -2297,12 +2299,12 @@
                         <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> CRM integration</li>
                         <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Dedicated account manager</li>
                     </ul>
-                    <a href="https://buy.stripe.com/bJe00jdfk2YnaEX8JJgrS00" target="_blank" class="pricing-btn secondary" data-plan="Enterprise - $347/mo" onclick="document.getElementById('selectedPlan').value='Enterprise - $347/mo'">Contact Us</a>
+                    <button type="button" class="pricing-btn secondary js-open-lead" data-plan="Enterprise - $347/mo">Get Started</button>
                 </div>
             </div>
 
             <div class="guarantee-badge animate-on-scroll">
-                <p><strong>30-Day Money-Back Guarantee.</strong> Try it risk-free. Not happy? Full refund, no questions asked.</p>
+                <p><strong>Free setup + 30-Day Money-Back Guarantee.</strong> We build it for you, and you only pay once it's live. Not happy? Full refund, no questions asked.</p>
             </div>
         </div>
     </section>
@@ -2627,5 +2629,106 @@
             }
         });
     </script>
+<!-- ========== LEAD CAPTURE MODAL ========== -->
+<style>
+  .lead-overlay{position:fixed;inset:0;z-index:2000;background:rgba(5,5,10,.78);backdrop-filter:blur(6px);display:none;align-items:flex-start;justify-content:center;padding:48px 16px;overflow-y:auto}
+  .lead-overlay.open{display:flex}
+  .lead-modal{background:var(--bg-card);border:1px solid var(--border-light);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);width:100%;max-width:480px;padding:34px;position:relative;margin:auto;animation:leadIn .3s ease both}
+  @keyframes leadIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  .lead-close{position:absolute;top:14px;right:16px;background:none;border:none;color:var(--text-muted);font-size:28px;line-height:1;cursor:pointer;padding:4px;font-family:inherit}
+  .lead-close:hover{color:var(--text-primary)}
+  .lead-modal h3{font-size:1.5rem;margin:12px 0 8px;color:var(--text-primary)}
+  .lead-sub{color:var(--text-secondary);font-size:.95rem;margin-bottom:22px}
+  .lead-form{display:flex;flex-direction:column;gap:16px}
+  .lead-row{display:flex;gap:12px}
+  .lead-row .form-group{flex:1;min-width:0}
+  .lead-hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+  .lead-fineprint{text-align:center;margin-top:14px;color:var(--text-muted);font-size:.8rem}
+  .lead-success{text-align:center;padding:18px 0}
+  .lead-check{width:64px;height:64px;border-radius:50%;margin:0 auto 18px;background:var(--accent-glow);display:flex;align-items:center;justify-content:center}
+  .js-open-lead{font-family:inherit;border:none;cursor:pointer}
+  .cta-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--text-primary);border:1px solid var(--border-light);padding:18px 30px;border-radius:60px;font-size:1.05rem;font-weight:600;transition:var(--transition);cursor:pointer;font-family:inherit}
+  .cta-ghost:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-glow);transform:translateY(-2px)}
+  .hero-cta-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;align-items:center}
+  @media(max-width:600px){.lead-row{flex-direction:column;gap:16px}.lead-modal{padding:26px 20px}}
+</style>
+<div class="lead-overlay" id="leadOverlay" role="dialog" aria-modal="true" aria-labelledby="leadTitle">
+  <div class="lead-modal">
+    <button class="lead-close" id="leadClose" type="button" aria-label="Close">&times;</button>
+    <div id="leadContent">
+      <span class="section-label">Get Started</span>
+      <h3 id="leadTitle">Let's build your AI receptionist</h3>
+      <p class="lead-sub">Free setup — we build and configure it for you. You only start paying once it's live and answering your calls.</p>
+      <form class="lead-form" id="leadForm" novalidate>
+        <div class="form-group">
+          <label for="lf_business">Business name *</label>
+          <input type="text" id="lf_business" name="business_name" required>
+        </div>
+        <div class="lead-row">
+          <div class="form-group">
+            <label for="lf_name">Your name *</label>
+            <input type="text" id="lf_name" name="contact_name" required>
+          </div>
+          <div class="form-group">
+            <label for="lf_phone">Phone *</label>
+            <input type="tel" id="lf_phone" name="phone" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lf_email">Email *</label>
+          <input type="email" id="lf_email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="lf_services">What does your business do? *</label>
+          <input type="text" id="lf_services" name="services" placeholder="e.g. tree removal, trimming, stump grinding" required>
+        </div>
+        <div class="form-group">
+          <label for="lf_plan">Plan you're interested in</label>
+          <select id="lf_plan" name="plan">
+            <option value="Starter - $97/mo">Starter — $97/mo</option>
+            <option value="Professional - $197/mo">Professional — $197/mo</option>
+            <option value="Enterprise - $347/mo">Enterprise — $347/mo</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+        <input type="text" name="company_website" id="lf_hp" class="lead-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="form-submit-btn" id="leadSubmit">Request My Free Setup →</button>
+        <p class="lead-fineprint">No charge today. No contracts. Cancel anytime.</p>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var LEAD_WEBHOOK_URL = "https://hook.us2.make.com/ky4jhvqyp19ycfgtg76bvmim5ulbr1pd";
+  var overlay=document.getElementById('leadOverlay');
+  var content=document.getElementById('leadContent');
+  function preselect(plan){var s=document.getElementById('lf_plan');if(s&&plan){for(var i=0;i<s.options.length;i++){if(s.options[i].value===plan){s.selectedIndex=i;return;}}}}
+  window.openLeadModal=function(plan){preselect(plan);overlay.classList.add('open');document.body.style.overflow='hidden';var b=document.getElementById('lf_business');if(b)setTimeout(function(){b.focus();},60);};
+  function closeModal(){overlay.classList.remove('open');document.body.style.overflow='';}
+  document.getElementById('leadClose').addEventListener('click',closeModal);
+  overlay.addEventListener('click',function(e){if(e.target===overlay)closeModal();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('open'))closeModal();});
+  document.querySelectorAll('.js-open-lead').forEach(function(el){
+    el.addEventListener('click',function(){openLeadModal(el.getAttribute('data-plan')||'');});
+  });
+  var form=document.getElementById('leadForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(document.getElementById('lf_hp').value)return;
+    if(!form.checkValidity()){if(form.reportValidity)form.reportValidity();return;}
+    var btn=document.getElementById('leadSubmit');btn.disabled=true;btn.textContent='Sending…';
+    var data={};new FormData(form).forEach(function(v,k){data[k]=v;});
+    delete data.company_website;
+    data.submitted_at=new Date().toISOString();data.source='crewlineai.com';
+    var first=(data.contact_name||'').trim().split(' ')[0];
+    function ok(){content.innerHTML='<div class="lead-success"><div class="lead-check"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4D9EFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3>You\'re all set</h3><p class="lead-sub">Thanks '+(first||'')+' — we\'ve got your details. We\'ll build your AI receptionist and reach out within 24 hours to get it live.</p></div>';}
+    function fail(){btn.disabled=false;btn.textContent='Request My Free Setup →';if(!document.getElementById('leadErr')){content.insertAdjacentHTML('afterbegin','<p id="leadErr" class="lead-fineprint" style="color:var(--red);margin-bottom:10px">Hmm, that did not go through. Please try again in a moment.</p>');}}
+    if(!LEAD_WEBHOOK_URL||LEAD_WEBHOOK_URL.indexOf('PASTE')===0){ok();return;}
+    fetch(LEAD_WEBHOOK_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams(data)}).then(function(){ok();}).catch(fail);
+  });
+})();
+</script>
+
 </body>
 </html>
